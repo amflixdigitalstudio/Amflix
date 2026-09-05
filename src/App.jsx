@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
+
 
 // Core Pages
 import Home from './pages/Home';
@@ -31,6 +33,7 @@ import DesignVideo from './pages/services/DesignVideo';
 
 export default function App() {
   return (
+    
     <Router>
       <div className="min-h-screen bg-[#080808] text-[#FFF8F5] flex flex-col justify-between">
         {/* Navigation Bar */}
@@ -71,6 +74,10 @@ export default function App() {
         {/* Desktop/Tablet Only Footer */}
         <Footer />
       </div>
+
+
+    {/* Vercel Analytics Tracker */}
+      <Analytics />
     </Router>
   );
 }
