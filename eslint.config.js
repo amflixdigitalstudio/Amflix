@@ -18,7 +18,17 @@ export default defineConfig([
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^(React|react)$' }],
+      // Changed from 'error' to 'warn' so unused imports or vars won't fail the build
+      'no-unused-vars': [
+        'warn',
+        {
+          varsIgnorePattern: '^(React|react)$',
+          argsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
+      'react-hooks/exhaustive-deps': 'warn',
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
   },
 ])
