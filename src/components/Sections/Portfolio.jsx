@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Sparkles, X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
 import { portfolioData } from '../../data/PortfolioData';
@@ -35,13 +35,13 @@ export default function Portfolio() {
     return sortedProjects.filter((item) => item.category === activeFilter);
   }, [activeFilter, sortedProjects]);
 
-  const showNext = () => {
+  const showNext = useCallback(() => {
     setLightboxIndex((prev) => (prev + 1) % filteredItems.length);
-  };
+  }, [filteredItems.length]);
 
-  const showPrev = () => {
+  const showPrev = useCallback(() => {
     setLightboxIndex((prev) => (prev - 1 + filteredItems.length) % filteredItems.length);
-  };
+  }, [filteredItems.length]);
 
   // Keyboard navigation for desktop view
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function Portfolio() {
       window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'auto';
     };
-  }, [lightboxIndex, filteredItems.length]);
+  }, [lightboxIndex, filteredItems.length, showNext, showPrev]);
 
   // Clean navigation link renderer (external vs internal router navigation)
   const renderProjectAction = (url, title, isLightbox = false) => {

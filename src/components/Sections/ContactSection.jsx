@@ -96,7 +96,7 @@ export default function ContactSection() {
         message: ''
       });
       setWebsiteError('');
-    } catch (err) {
+    } catch {
       setStatus({
         submitting: false,
         success: false,

@@ -4,7 +4,6 @@ import {
   ArrowUpRight, 
   Briefcase, 
   Repeat, 
-  Sparkles, 
   CheckCircle2, 
   Compass, 
   Cpu, 

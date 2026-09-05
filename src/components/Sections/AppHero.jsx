@@ -10,7 +10,6 @@ import {
   Store, 
   Users, 
   Rocket, 
-  Layers, 
   Server, 
   LayoutDashboard, 
   Webhook 

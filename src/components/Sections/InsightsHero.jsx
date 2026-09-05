@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Search, ArrowUpRight, BookOpen, Compass } from 'lucide-react';
+import { Sparkles, Search, Compass } from 'lucide-react';
 import './InsightsHero.css';
 
 export default function InsightsHero({ onSelectCategory, onSearchChange }) {

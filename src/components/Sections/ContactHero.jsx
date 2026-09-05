@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowUpRight, MessageSquare, Clock, ShieldCheck, Mail } from 'lucide-react';
+import { MessageSquare, Clock, ShieldCheck } from 'lucide-react';
 import './ContactHero.css';
 
 export default function ContactHero() {

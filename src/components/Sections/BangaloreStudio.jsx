@@ -2,11 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   ArrowUpRight, 
-  Sparkles, 
   MapPin, 
-  CheckCircle2, 
-  Layers, 
-  TrendingUp, 
   Globe, 
   ChevronDown, 
   Laptop, 
@@ -16,7 +12,6 @@ import {
   Megaphone, 
   Video,
   Building2,
-  ShieldCheck
 } from 'lucide-react';
 import { portfolioData } from '../../data/PortfolioData';
 import './BangaloreStudio.css';

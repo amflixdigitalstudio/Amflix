@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, MessageSquare, Sparkles, MessageCircle } from 'lucide-react';
+import { ArrowUpRight, Sparkles, MessageCircle } from 'lucide-react';
 import './FAQCTA.css';
 
 export default function FAQCTA() {

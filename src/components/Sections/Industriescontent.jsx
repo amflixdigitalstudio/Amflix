@@ -5,9 +5,7 @@ import {
   Sparkles, 
   AlertCircle, 
   CheckCircle2, 
-  Layers, 
   HelpCircle,
-  Briefcase
 } from 'lucide-react';
 import { industriesData } from '../../data/Industriescontent';
 import './Industriescontent.css';

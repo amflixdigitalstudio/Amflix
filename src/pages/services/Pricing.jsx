@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PricingHero from '../../components/Sections/PricingHero';
 import OurServices from '../../components/Sections/OurServices';
 import PricingSections from '../../components/Sections/PricingSections';

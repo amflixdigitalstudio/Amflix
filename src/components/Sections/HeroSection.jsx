@@ -21,8 +21,6 @@ export default function HeroSection() {
 
   // 2. 3-Second Text Switcher with Dynamic Slide Bank Selection
   useEffect(() => {
-    setCurrentSlideIndex(0); // Reset index on viewport change
-
     const activeSlides = isMobile ? heroData.mobileSlides : heroData.desktopSlides;
 
     const interval = setInterval(() => {
