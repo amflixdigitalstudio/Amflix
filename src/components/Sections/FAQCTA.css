@@ -1,0 +1,191 @@
+/* =========================================
+   FAQ CTA SECTION (AMFLIX DARK THEME)
+   ========================================= */
+.faq-cta-section {
+  position: relative;
+  width: 100%;
+  background: transparent !important;
+  color: #FFF8F5;
+  padding: 3rem 1.5rem 5.5rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: -3rem; /* Aligns with established page flow */
+  overflow: hidden;
+}
+
+.faq-cta-glow {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 350px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.09) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.faq-cta-container {
+  width: 100%;
+  max-width: 920px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.text-terracotta {
+  color: #F2A38F;
+}
+
+/* Card Shell */
+.faq-cta-card {
+  width: 100%;
+  background: linear-gradient(180deg, #13110f 0%, #0d0c0b 100%);
+  border: 1px solid rgba(242, 163, 143, 0.28);
+  border-radius: 24px;
+  padding: 3.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 16px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(242, 163, 143, 0.05);
+  box-sizing: border-box;
+}
+
+/* Badge */
+.faq-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+/* Typography */
+.faq-cta-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: #FFF8F5;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.02em;
+}
+
+.faq-cta-subtitle {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  color: #F2A38F;
+  margin: 0 0 0.85rem 0;
+  font-weight: 400;
+}
+
+.faq-cta-description {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: rgba(255, 248, 245, 0.68);
+  margin: 0 0 2.25rem 0;
+  max-width: 580px;
+}
+
+/* Action Buttons */
+.faq-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.faq-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.faq-cta-btn.primary {
+  background: #F2A38F;
+  color: #080808;
+  box-shadow: 0 4px 18px rgba(242, 163, 143, 0.28);
+}
+
+.faq-cta-btn.primary:hover {
+  background: #FFF8F5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(242, 163, 143, 0.4);
+}
+
+.faq-cta-btn.secondary {
+  background: rgba(255, 255, 255, 0.04);
+  color: #FFF8F5;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.faq-cta-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(242, 163, 143, 0.35);
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   RESPONSIVENESS (MOBILE <= 768PX)
+   ========================================= */
+@media (max-width: 768px) {
+  .faq-cta-section {
+    padding: 2rem 1rem 3.5rem;
+    margin-top: -2rem;
+  }
+
+  .faq-cta-card {
+    padding: 2.25rem 1.35rem;
+    border-radius: 18px;
+  }
+
+  .faq-cta-title {
+    font-size: 1.85rem;
+  }
+
+  .faq-cta-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  .faq-cta-description {
+    font-size: 0.88rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .faq-cta-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .faq-cta-btn {
+    width: 100%;
+    padding: 0.8rem 1.25rem;
+    font-size: 0.88rem;
+  }
+}

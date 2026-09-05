@@ -1,0 +1,281 @@
+/* =========================================
+   SMM HERO SECTION (AMFLIX DARK THEME)
+   ========================================= */
+.smm-hero-wrap {
+  position: relative;
+  width: 100%;
+  background: transparent !important;
+  color: #FFF8F5;
+  padding: 6.5rem 1.5rem 4.5rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -3rem;
+}
+
+.smm-glow {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 420px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.08) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.smm-hero-container {
+  width: 100%;
+  max-width: 1140px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-terracotta {
+  color: #F2A38F;
+}
+
+/* =========================================
+   HERO TYPOGRAPHY & ACTIONS
+   ========================================= */
+.smm-hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 860px;
+  margin-bottom: 4rem;
+}
+
+.smm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.smm-h1 {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #F2A38F;
+  font-weight: 700;
+  margin: 0 0 0.85rem 0;
+}
+
+.smm-headline {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2.4rem, 5.2vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: #FFF8F5;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: -0.02em;
+}
+
+.smm-accent {
+  color: #F2A38F;
+  font-style: italic;
+}
+
+.smm-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: rgba(255, 248, 245, 0.72);
+  margin: 0 0 2.25rem 0;
+  max-width: 720px;
+}
+
+.smm-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.85rem 2rem;
+  border-radius: 9999px;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.smm-btn.primary {
+  background: #F2A38F;
+  color: #080808;
+  box-shadow: 0 4px 20px -4px rgba(242, 163, 143, 0.35);
+}
+
+.smm-btn.primary:hover {
+  background: #FFF8F5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -4px rgba(242, 163, 143, 0.45);
+}
+
+/* =========================================
+   WHAT WE MANAGE SHELF
+   ========================================= */
+.smm-services-shelf {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smm-shelf-header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smm-shelf-tag {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #F2A38F;
+  margin-bottom: 0.45rem;
+  display: block;
+}
+
+.smm-shelf-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(1.85rem, 3.2vw, 2.6rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #FFF8F5;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Responsive Grid for 14 capabilities */
+.smm-offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.smm-offering-card {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.15rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  transition: all 0.22s ease;
+}
+
+.smm-offering-card:hover {
+  border-color: rgba(242, 163, 143, 0.35);
+  background: rgba(242, 163, 143, 0.03);
+  transform: translateY(-2px);
+}
+
+.smm-icon-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(242, 163, 143, 0.08);
+  border: 1px solid rgba(242, 163, 143, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.smm-offering-name {
+  font-family: var(--font-primary, serif);
+  font-size: 1.02rem;
+  font-weight: 500;
+  color: #FFF8F5;
+}
+
+/* =========================================
+   RESPONSIVENESS
+   ========================================= */
+@media (max-width: 1024px) {
+  .smm-offerings-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .smm-hero-wrap {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .smm-hero-content {
+    margin-bottom: 2.75rem;
+  }
+
+  .smm-headline {
+    font-size: 2.25rem;
+  }
+
+  .smm-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .smm-btn {
+    width: 100%;
+  }
+
+  .smm-shelf-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .smm-shelf-title {
+    font-size: 1.75rem;
+  }
+
+  /* 2 columns on mobile devices */
+  .smm-offerings-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .smm-offering-card {
+    padding: 0.85rem 0.95rem;
+    gap: 0.65rem;
+  }
+
+  .smm-offering-name {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .smm-offerings-grid {
+    grid-template-columns: 1fr;
+  }
+}

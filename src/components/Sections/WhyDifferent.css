@@ -1,0 +1,224 @@
+/* =========================================
+   WHAT MAKES AMFLIX DIFFERENT SECTION
+   ========================================= */
+.diff-section {
+  position: relative;
+  width: 100%;
+  background-color: #080808 !important;
+  color: #FFF8F5;
+  padding: 6.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -5rem;
+}
+
+.diff-ambient-glow {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.07) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.diff-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+/* Header */
+.diff-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.diff-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.diff-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2.1rem, 4vw, 3.25rem);
+  font-weight: 500;
+  color: #FFF8F5;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.diff-title-accent {
+  color: #F2A38F;
+}
+
+/* 4-Item Minimal Quadrant Grid */
+.diff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1050px;
+}
+
+/* Base Card Unit */
+.diff-card {
+  position: relative;
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.diff-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(242, 163, 143, 0.4);
+  background: linear-gradient(180deg, #18130e 0%, #100d0a 100%);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px rgba(242, 163, 143, 0.1);
+}
+
+/* Header Row */
+.diff-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.diff-num {
+  font-family: var(--font-primary, serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #F2A38F;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.diff-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(242, 163, 143, 0.08);
+  border: 1px solid rgba(242, 163, 143, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2A38F;
+  transition: all 0.3s ease;
+}
+
+.diff-card:hover .diff-icon-wrap {
+  background: #F2A38F;
+  color: #080808;
+  transform: scale(1.08);
+}
+
+.diff-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Body */
+.diff-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.diff-item-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #FFF8F5;
+  margin: 0 0 0.65rem 0;
+  letter-spacing: -0.01em;
+}
+
+.diff-item-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.65);
+  margin: 0;
+}
+
+/* Subtle Hover Accent Corner */
+.diff-card-border-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at top right, rgba(242, 163, 143, 0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.diff-card:hover .diff-card-border-glow {
+  opacity: 1;
+}
+
+/* =========================================
+   RESPONSIVENESS (MOBILE & TABLET <= 768px)
+   ========================================= */
+@media (max-width: 768px) {
+  .diff-section {
+    padding: 4.5rem 1.25rem;
+  }
+
+  .diff-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .diff-title {
+    font-size: 2.1rem;
+  }
+
+  .diff-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .diff-card {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .diff-item-title {
+    font-size: 1.25rem;
+  }
+
+  .diff-item-desc {
+    font-size: 0.88rem;
+  }
+}

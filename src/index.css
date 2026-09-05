@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* 1. Brand Fonts (.otf) */
+@font-face {
+  font-family: 'InterTight-Bold';
+  src: url('./assets/fonts/InterTight-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  character-spacing: 0.05em;
+}
+
+@font-face {
+  font-family: 'NotoSerifKhitanSmallScript';
+  src: url('./assets/fonts/NotoSerifKhitanSmallScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Brand Tokens */
+:root {
+  --color-primary: #F2A38F;
+  --color-secondary: #FFEAE6;
+  --color-background: #080808;
+  --color-surface: #1D160B;
+  --color-light: #FFF8F5;
+
+  --font-primary: 'InterTight-Bold', sans-serif;
+  --font-supporting: 'NotoSerifKhitanSmallScript', sans-serif;
+}
+
+/* 3. Base Document */
+body {
+  background-color: var(--color-background);
+  color: var(--color-light);
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}

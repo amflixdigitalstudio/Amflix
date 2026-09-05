@@ -1,0 +1,394 @@
+/* =========================================
+   PRICING SECTIONS (TRANSPARENT & CLEAN THEME)
+   ========================================= */
+.pricing-sections-wrap {
+  width: 100%;
+  background: transparent !important;
+  color: #FFF8F5;
+  box-sizing: border-box;
+}
+
+.ps-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.ps-section {
+  position: relative;
+  padding: 3rem 0;
+  margin-top: -3rem; /* Snug negative offset matching your standard layout */
+  background: transparent !important;
+}
+
+.text-terracotta {
+  color: #F2A38F;
+}
+
+/* Section Header Typography */
+.ps-header {
+  text-align: center;
+  margin-bottom: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ps-tag {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #F2A38F;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.ps-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #FFF8F5;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.ps-lead {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.7);
+  margin: 0.65rem 0 0 0;
+  max-width: 650px;
+}
+
+/* =========================================
+   SECTION 3: WORK GRID
+   ========================================= */
+.ps-work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.ps-work-card {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.5rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ps-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #F2A38F;
+  margin-bottom: 0.75rem;
+}
+
+.ps-work-heading {
+  font-family: var(--font-primary, serif);
+  font-size: 1.6rem;
+  color: #FFF8F5;
+  margin: 0 0 0.5rem 0;
+}
+
+.ps-work-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: rgba(255, 248, 245, 0.65);
+  margin: 0 0 1.75rem 0;
+}
+
+.ps-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ps-service-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.ps-service-row:hover {
+  background: rgba(242, 163, 143, 0.05);
+  border-color: rgba(242, 163, 143, 0.35);
+  transform: translateX(4px);
+}
+
+.ps-service-name {
+  font-family: var(--font-primary, serif);
+  font-size: 1.05rem;
+  color: #FFF8F5;
+}
+
+.ps-service-price {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.88rem;
+  color: #F2A38F;
+  font-weight: 600;
+}
+
+/* =========================================
+   SECTION 4: CUSTOM SOLUTIONS
+   ========================================= */
+.ps-custom-card {
+  background: linear-gradient(180deg, #15110d 0%, #0d0b09 100%);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  border-radius: 24px;
+  padding: 3.5rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.ps-custom-content .ps-tag {
+  margin-bottom: 0.4rem;
+}
+
+.ps-custom-content .ps-title {
+  font-size: clamp(2rem, 3.2vw, 2.65rem);
+  margin-bottom: 1rem;
+}
+
+.ps-custom-p {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: rgba(255, 248, 245, 0.72);
+  margin: 0 0 2rem 0;
+}
+
+.ps-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.ps-btn.primary {
+  background: #F2A38F;
+  color: #080808;
+  box-shadow: 0 4px 18px rgba(242, 163, 143, 0.25);
+}
+
+.ps-btn.primary:hover {
+  background: #FFF8F5;
+  transform: translateY(-2px);
+}
+
+.ps-custom-list-wrap {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 2rem 2.25rem;
+}
+
+.ps-custom-list-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.25rem;
+  color: #FFF8F5;
+  margin: 0 0 1.25rem 0;
+}
+
+.ps-custom-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem 1.25rem;
+}
+
+.ps-custom-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.88rem;
+  color: rgba(255, 248, 245, 0.78);
+}
+
+/* =========================================
+   SECTION 5: PROCESS GRID (5 STEPS)
+   ========================================= */
+.ps-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.15rem;
+}
+
+.ps-process-card {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 1.75rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ps-step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+
+.ps-step-num {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #F2A38F;
+}
+
+.ps-step-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(242, 163, 143, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ps-step-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.25rem;
+  color: #FFF8F5;
+  margin: 0 0 0.45rem 0;
+}
+
+.ps-step-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 248, 245, 0.6);
+  margin: 0;
+}
+
+/* =========================================
+   SECTION 6: PRICING NOTES
+   ========================================= */
+.ps-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.ps-note-card {
+  background: #0d0c0b;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 1.65rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.ps-note-card.full {
+  grid-column: 1 / -1;
+  background: rgba(242, 163, 143, 0.03);
+  border-color: rgba(242, 163, 143, 0.2);
+}
+
+.ps-note-term {
+  font-family: var(--font-primary, serif);
+  font-size: 1.12rem;
+  color: #F2A38F;
+}
+
+.ps-note-card p {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.65);
+  margin: 0;
+}
+
+.ps-note-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+/* =========================================
+   RESPONSIVENESS
+   ========================================= */
+@media (max-width: 1024px) {
+  .ps-custom-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem;
+  }
+
+  .ps-process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ps-notes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ps-section {
+    padding: 2.25rem 0;
+    margin-top: -2rem;
+  }
+
+  .ps-work-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .ps-work-card {
+    padding: 1.75rem 1.4rem;
+  }
+
+  .ps-custom-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .ps-custom-list-wrap {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .ps-custom-items {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ps-process-grid,
+  .ps-notes-grid {
+    grid-template-columns: 1fr;
+  }
+}

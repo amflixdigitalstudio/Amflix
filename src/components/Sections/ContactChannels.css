@@ -1,0 +1,245 @@
+/* =========================================
+   SPLIT CONTACT SECTION (LOGO + DETAILS)
+   ========================================= */
+.contact-channels-section {
+  position: relative;
+  width: 100%;
+  background-color: #080808 !important;
+  color: #FFF8F5;
+  padding: 5rem 1.5rem 7rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -5rem;
+}
+
+.contact-channels-container {
+  width: 100%;
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+/* Left: Logo Column */
+.contact-brand-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-logo-frame {
+  width: 130px;
+  height: 130px;
+  border-radius: 24px;
+  background: #11100f;
+  border: 1px solid rgba(242, 163, 143, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.85);
+}
+
+.contact-company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.contact-brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-studio-label {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #F2A38F;
+}
+
+.contact-brand-name {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2rem, 3.2vw, 2.65rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: #FFF8F5;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.contact-brand-tagline {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.65);
+  margin: 0.5rem 0 0 0;
+  max-width: 420px;
+}
+
+/* Right: Contact Items (Bordered Editorial List) */
+.contact-details-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-channel-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.65rem 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-channel-row:hover {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: rgba(242, 163, 143, 0.03);
+  border-bottom-color: rgba(242, 163, 143, 0.4);
+}
+
+.channel-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.channel-icon-pill {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(29, 22, 11, 0.65);
+  border: 1px solid rgba(242, 163, 143, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2A38F;
+  flex-shrink: 0;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.channel-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-channel-row:hover .channel-icon-pill {
+  transform: scale(1.08);
+  background: rgba(242, 163, 143, 0.15);
+  border-color: #F2A38F;
+}
+
+.channel-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.channel-label {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 248, 245, 0.4);
+}
+
+.channel-value {
+  font-family: var(--font-primary, serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #FFF8F5;
+  transition: color 0.2s ease;
+  word-break: break-word;
+}
+
+.contact-channel-row:hover .channel-value {
+  color: #F2A38F;
+}
+
+.channel-action-trigger {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 248, 245, 0.4);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.contact-channel-row:hover .channel-action-trigger {
+  border-color: #F2A38F;
+  background: #F2A38F;
+  color: #080808;
+  transform: translate(2px, -2px);
+}
+
+/* =========================================
+   RESPONSIVENESS (MOBILE <= 880PX)
+   ========================================= */
+@media (max-width: 880px) {
+  .contact-channels-section {
+    padding: 3.5rem 1rem 5rem;
+  }
+
+  .contact-channels-container {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .contact-brand-col {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-logo-frame {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.25rem;
+    border-radius: 20px;
+  }
+
+  .contact-brand-tagline {
+    font-size: 0.92rem;
+  }
+
+  .contact-channel-row {
+    padding: 1.35rem 0.25rem;
+  }
+
+  .channel-icon-pill {
+    width: 38px;
+    height: 38px;
+  }
+
+  .channel-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .channel-value {
+    font-size: 1.02rem;
+  }
+
+  .contact-channel-row:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

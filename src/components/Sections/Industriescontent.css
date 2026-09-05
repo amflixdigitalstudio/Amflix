@@ -1,0 +1,537 @@
+/* =========================================
+   INDUSTRIES HUB SECTION STYLES
+   ========================================= */
+.ind-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #080808 !important;
+  color: #FFF8F5;
+  padding: 7rem 1.5rem 8rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -4rem;
+}
+
+.ind-glow {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 450px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.08) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ind-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+/* Header */
+.ind-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.ind-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.ind-main-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2.3rem, 4.5vw, 3.75rem);
+  font-weight: 500;
+  color: #FFF8F5;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 1rem 0;
+  max-width: 880px;
+}
+
+.ind-accent {
+  color: #F2A38F;
+  font-style: italic;
+}
+
+.ind-main-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.7);
+  max-width: 660px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Tab Navigation */
+.ind-tabs-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+  padding: 0.4rem;
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  max-width: 100%;
+}
+
+.ind-tab-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 248, 245, 0.7);
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.ind-tab-btn:hover {
+  color: #FFF8F5;
+}
+
+.ind-tab-btn.active {
+  background: #F2A38F;
+  color: #080808;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(242, 163, 143, 0.25);
+}
+
+/* Content Canvas */
+.ind-canvas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* 1. Hero Block */
+.ind-hero-block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0 1rem;
+}
+
+.ind-sector-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #F2A38F;
+  margin-bottom: 0.75rem;
+}
+
+.ind-hero-h1 {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(1.8rem, 3.2vw, 2.75rem);
+  color: #FFF8F5;
+  margin: 0 0 0.75rem 0;
+  max-width: 850px;
+  line-height: 1.2;
+}
+
+.ind-hero-tagline {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.1rem;
+  color: rgba(255, 248, 245, 0.65);
+  margin: 0;
+  max-width: 600px;
+}
+
+/* 2. Friction vs Solution Grid */
+.ind-duo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.ind-box {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ind-box-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.ind-box-header h3 {
+  font-family: var(--font-primary, serif);
+  font-size: 1.35rem;
+  color: #FFF8F5;
+  margin: 0;
+}
+
+.ind-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ind-bullet-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(255, 248, 245, 0.75);
+}
+
+.ind-bullet-dot {
+  color: #F2A38F;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.ind-solution-text {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255, 248, 245, 0.75);
+  margin: 0 0 1.5rem 0;
+}
+
+.ind-services-cluster {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ind-cluster-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 248, 245, 0.5);
+  margin-bottom: 0.6rem;
+}
+
+.ind-services-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ind-service-tag {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  background: rgba(242, 163, 143, 0.08);
+  border: 1px solid rgba(242, 163, 143, 0.25);
+  color: #F2A38F;
+  font-weight: 500;
+}
+
+/* 3. Relevant Work Card */
+.ind-work-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.ind-work-visual {
+  position: relative;
+  min-height: 320px;
+}
+
+.ind-work-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ind-work-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(17, 16, 15, 0) 0%, rgba(17, 16, 15, 0.8) 100%);
+}
+
+.ind-work-body {
+  padding: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ind-work-top {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.ind-work-pill {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #F2A38F;
+}
+
+.ind-work-metric {
+  font-size: 0.78rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFF8F5;
+}
+
+.ind-work-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.65rem;
+  color: #FFF8F5;
+  margin: 0 0 0.6rem 0;
+}
+
+.ind-work-tagline {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.95rem;
+  color: rgba(255, 248, 245, 0.7);
+  line-height: 1.55;
+  margin: 0 0 2rem 0;
+}
+
+.ind-work-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #F2A38F;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.ind-work-btn:hover {
+  gap: 0.75rem;
+}
+
+/* 4. Sector FAQ */
+.ind-faq-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.ind-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ind-faq-header h3 {
+  font-family: var(--font-primary, serif);
+  font-size: 1.25rem;
+  color: #FFF8F5;
+  margin: 0;
+}
+
+.ind-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.ind-faq-card {
+  background: #0d0c0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.ind-faq-q {
+  font-family: var(--font-primary, serif);
+  font-size: 1.05rem;
+  color: #FFF8F5;
+  margin: 0 0 0.5rem 0;
+}
+
+.ind-faq-a {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.88rem;
+  color: rgba(255, 248, 245, 0.65);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* 5. CTA Banner */
+.ind-cta-banner {
+  background: linear-gradient(180deg, #16120e 0%, #100d0a 100%);
+  border: 1px solid rgba(242, 163, 143, 0.35);
+  border-radius: 24px;
+  padding: 2.75rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.8);
+}
+
+.ind-cta-content h3 {
+  font-family: var(--font-primary, serif);
+  font-size: 1.65rem;
+  color: #FFF8F5;
+  margin: 0 0 0.4rem 0;
+}
+
+.ind-cta-content p {
+  font-size: 0.95rem;
+  color: rgba(255, 248, 245, 0.7);
+  margin: 0;
+}
+
+.ind-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.ind-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.ind-btn.primary {
+  background: #F2A38F;
+  color: #080808;
+}
+
+.ind-btn.primary:hover {
+  background: #FFF8F5;
+  transform: translateY(-2px);
+}
+
+.ind-btn.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #FFF8F5;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ind-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(242, 163, 143, 0.35);
+}
+
+.text-terracotta {
+  color: #F2A38F;
+}
+
+/* =========================================
+   RESPONSIVENESS (MOBILE <= 850PX)
+   ========================================= */
+@media (max-width: 850px) {
+  .ind-section {
+    padding: 5rem 1rem 6rem;
+  }
+
+  .ind-tabs-nav {
+    width: 100vw;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .ind-tabs-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ind-duo-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .ind-work-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ind-work-overlay {
+    background: linear-gradient(180deg, rgba(17, 16, 15, 0) 0%, rgba(17, 16, 15, 0.9) 100%);
+  }
+
+  .ind-work-body {
+    padding: 1.75rem;
+  }
+
+  .ind-faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ind-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .ind-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ind-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

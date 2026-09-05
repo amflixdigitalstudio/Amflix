@@ -1,0 +1,599 @@
+/* =========================================
+   PORTFOLIO SECTION & PINTEREST MASONRY
+   ========================================= */
+.portfolio-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #080808 !important;
+  color: #FFF8F5;
+  padding: 6.5rem 1.5rem 8rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -4rem;
+}
+
+.portfolio-glow {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 750px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.08) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.portfolio-container {
+  width: 100%;
+  max-width: 1360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+/* Header */
+.portfolio-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.75rem;
+}
+
+.portfolio-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.portfolio-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2.4rem, 5vw, 3.85rem);
+  font-weight: 500;
+  color: #FFF8F5;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 1rem 0;
+  max-width: 900px;
+}
+
+.portfolio-accent {
+  color: #F2A38F;
+  font-style: italic;
+}
+
+.portfolio-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.7);
+  max-width: 680px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Filter Controls */
+.portfolio-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+  padding: 0.35rem;
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  max-width: 100%;
+}
+
+.portfolio-filter-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 248, 245, 0.7);
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.55rem 1.2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.portfolio-filter-btn:hover {
+  color: #FFF8F5;
+}
+
+.portfolio-filter-btn.active {
+  background: #F2A38F;
+  color: #080808;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(242, 163, 143, 0.25);
+}
+
+/* Pinterest Masonry Grid (Desktop 3-Column) */
+.portfolio-masonry {
+  column-count: 3;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.masonry-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease,
+              box-shadow 0.35s ease;
+}
+
+.masonry-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(242, 163, 143, 0.45);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.9), 0 0 25px rgba(242, 163, 143, 0.12);
+}
+
+/* Staggered Aspect Ratios */
+.aspect-square .masonry-img {
+  height: 280px;
+}
+
+.aspect-medium .masonry-img {
+  height: 380px;
+}
+
+.aspect-tall .masonry-img {
+  height: 490px;
+}
+
+.masonry-img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.masonry-card:hover .masonry-img {
+  transform: scale(1.04);
+}
+
+/* Card Gradient Overlay */
+.masonry-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.05) 0%, rgba(8, 8, 8, 0.85) 75%, #080808 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.4rem;
+  box-sizing: border-box;
+}
+
+.overlay-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.masonry-action-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(8, 8, 8, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF8F5;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.masonry-card:hover .masonry-action-icon {
+  background: #F2A38F;
+  border-color: #F2A38F;
+  color: #080808;
+  transform: scale(1.1);
+}
+
+.overlay-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.masonry-project-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #FFF8F5;
+  margin: 0 0 0.35rem 0;
+  letter-spacing: -0.01em;
+}
+
+.masonry-project-tagline {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.85rem;
+  color: rgba(255, 248, 245, 0.7);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* =========================================
+   FULLSCREEN LIGHTBOX GALLERY MODAL
+   ========================================= */
+.portfolio-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 6, 6, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.lightbox-top-bar {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.lightbox-counter {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255, 248, 245, 0.6);
+  background: rgba(29, 22, 11, 0.8);
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(242, 163, 143, 0.25);
+}
+
+.lightbox-close-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(29, 22, 11, 0.85);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #FFF8F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lightbox-close-btn:hover {
+  background: #F2A38F;
+  color: #080808;
+  transform: scale(1.05);
+}
+
+.lightbox-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(20, 15, 10, 0.85);
+  border: 1px solid rgba(242, 163, 143, 0.35);
+  color: #F2A38F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.25s ease;
+}
+
+.lightbox-arrow-btn.prev {
+  left: 2rem;
+}
+
+.lightbox-arrow-btn.next {
+  right: 2rem;
+}
+
+.lightbox-arrow-btn:hover {
+  background: #F2A38F;
+  color: #080808;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-content-wrap {
+  position: relative;
+  z-index: 10;
+  max-width: 1050px;
+  width: 100%;
+  max-height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.lightbox-figure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0d0b08;
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.95);
+  max-height: 82vh;
+  width: 100%;
+}
+
+.lightbox-main-img {
+  width: 100%;
+  height: auto;
+  max-height: 68vh;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox-caption-bar {
+  position: relative;
+  z-index: 20;
+  padding: 1.25rem 1.75rem;
+  background: #110e0b;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  pointer-events: auto;
+}
+
+.lightbox-caption-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.lightbox-caption-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.45rem;
+  color: #FFF8F5;
+  margin: 0 0 0.2rem 0;
+}
+
+.lightbox-caption-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.88rem;
+  color: rgba(255, 248, 245, 0.65);
+  margin: 0;
+}
+
+.lightbox-visit-btn {
+  position: relative;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.25rem;
+  background: #F2A38F;
+  color: #080808 !important;
+  border-radius: 9999px;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: all 0.25s ease;
+}
+
+.lightbox-visit-btn:hover {
+  background: #FFF8F5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px -4px rgba(242, 163, 143, 0.4);
+}
+
+.lightbox-visit-btn:active {
+  transform: scale(0.97);
+}
+
+/* =========================================
+   RESPONSIVENESS (TABLET & MOBILE)
+   ========================================= */
+@media (max-width: 1024px) {
+  .portfolio-masonry {
+    column-count: 2;
+    column-gap: 1.25rem;
+  }
+
+  .lightbox-arrow-btn {
+    display: flex;
+    width: 44px;
+    height: 44px;
+  }
+
+  .lightbox-arrow-btn.prev {
+    left: 1rem;
+  }
+
+  .lightbox-arrow-btn.next {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 4.5rem 0.75rem 6rem;
+  }
+
+  .portfolio-title {
+    font-size: 2.1rem;
+  }
+
+  .portfolio-desc {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .portfolio-filter-bar {
+    width: 100vw;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 2-Column Pinterest Masonry Grid for Mobile */
+  .portfolio-masonry {
+    column-count: 2;
+    column-gap: 0.75rem;
+    width: 100%;
+  }
+
+  .masonry-item {
+    margin-bottom: 0.75rem;
+  }
+
+  .masonry-card {
+    border-radius: 14px;
+  }
+
+  /* Staggered Heights for Mobile Pinterest Style */
+  .aspect-square .masonry-img {
+    height: 180px;
+  }
+
+  .aspect-medium .masonry-img {
+    height: 240px;
+  }
+
+  .aspect-tall .masonry-img {
+    height: 310px;
+  }
+
+  .masonry-overlay {
+    padding: 0.75rem;
+  }
+
+  .masonry-action-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .masonry-action-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .masonry-project-title {
+    font-size: 0.92rem;
+    margin: 0 0 0.15rem 0;
+  }
+
+  .masonry-project-tagline {
+    font-size: 0.72rem;
+    line-height: 1.25;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Lightbox Mobile Adjustments */
+  .lightbox-top-bar {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
+  .lightbox-main-img {
+    max-height: 55vh;
+  }
+
+  .lightbox-caption-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1.15rem;
+  }
+
+  .lightbox-caption-title {
+    font-size: 1.2rem;
+  }
+
+  .lightbox-visit-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .lightbox-arrow-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .lightbox-arrow-btn.prev {
+    left: 0.5rem;
+  }
+
+  .lightbox-arrow-btn.next {
+    right: 0.5rem;
+  }
+}

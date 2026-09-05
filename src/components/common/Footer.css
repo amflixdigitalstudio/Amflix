@@ -1,0 +1,127 @@
+/* =========================================
+   DESKTOP / TABLET FOOTER (> 700px)
+   ========================================= */
+.site-footer {
+  width: 100%;
+  background: linear-gradient(180deg, #080808 0%, #1D160B 100%);
+  border-top: 1px solid rgba(242, 163, 143, 0.15);
+  color: #FFF8F5;
+  padding: 4rem 1.5rem 2rem;
+  margin-top: auto;
+  position: relative;
+  display: block;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.footer-logo {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1.25rem;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.7);
+  max-width: 320px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-meta {
+  font-size: 0.82rem;
+  color: #F2A38F;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #F2A38F;
+  margin-bottom: 1.25rem;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-link {
+  color: rgba(255, 248, 245, 0.7);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.footer-link:hover {
+  color: #F2A38F;
+  transform: translateX(3px);
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(242, 163, 143, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  color: rgba(255, 248, 245, 0.5);
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-legal-link {
+  font-size: 0.8rem;
+  color: rgba(255, 248, 245, 0.5);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-link:hover {
+  color: #F2A38F;
+}
+
+/* =========================================
+   MOBILE VIEW (<= 700px): HIDE FOOTER
+   ========================================= */
+@media (max-width: 700px) {
+  .site-footer {
+    display: none !important;
+  }
+}

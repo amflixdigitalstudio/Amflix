@@ -1,0 +1,179 @@
+/* =========================================
+   PRICING HERO SECTION (AMFLIX DARK THEME)
+   ========================================= */
+.pricing-hero-wrapper {
+  position: relative;
+  width: 100%;
+  background: transparent !important;
+  color: #FFF8F5;
+  padding: 6.5rem 1.5rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -3rem;
+}
+
+.pricing-hero-glow {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 780px;
+  height: 380px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.08) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pricing-hero-container {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text-terracotta {
+  color: #F2A38F;
+}
+
+/* Badge */
+.pricing-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.35rem;
+}
+
+/* Title & Accent */
+.pricing-hero-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2.3rem, 5.2vw, 4.2rem);
+  font-weight: 500;
+  line-height: 1.15;
+  color: #FFF8F5;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+.pricing-hero-accent {
+  color: #F2A38F;
+  font-style: italic;
+}
+
+/* Subtitle */
+.pricing-hero-subtitle {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  color: #FFF8F5;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 0.85rem 0;
+  max-width: 720px;
+}
+
+/* Description */
+.pricing-hero-description {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.98rem;
+  line-height: 1.68;
+  color: rgba(255, 248, 245, 0.68);
+  margin: 0 0 2.25rem 0;
+  max-width: 680px;
+}
+
+/* CTA */
+.pricing-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  background: #F2A38F;
+  color: #080808;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px -4px rgba(242, 163, 143, 0.35);
+}
+
+.pricing-hero-btn:hover {
+  background: #FFF8F5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -4px rgba(242, 163, 143, 0.45);
+}
+
+/* Perks Strip */
+.pricing-hero-perks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.perk-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.82rem;
+  color: rgba(255, 248, 245, 0.6);
+  letter-spacing: 0.02em;
+}
+
+/* =========================================
+   RESPONSIVENESS (MOBILE <= 768PX)
+   ========================================= */
+@media (max-width: 768px) {
+  .pricing-hero-wrapper {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .pricing-hero-title {
+    font-size: 2.15rem;
+  }
+
+  .pricing-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .pricing-hero-description {
+    font-size: 0.92rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .pricing-hero-btn {
+    width: 100%;
+  }
+
+  .pricing-hero-perks {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+}

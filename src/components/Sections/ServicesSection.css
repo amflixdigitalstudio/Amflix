@@ -1,0 +1,300 @@
+/* =========================================
+   SERVICES SECTION WRAPPER
+   ========================================= */
+.services-section-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -3rem;
+}
+
+.services-container {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+/* Header Section */
+.services-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3.5rem;
+  max-width: 100%;
+}
+
+.services-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.services-main-tagline {
+  font-family: var(--font-primary, serif);
+  text-align: center;
+  font-size: 2.75rem;
+  line-height: 1.15;
+  color: #FFF8F5;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.services-main-tagline span {
+  color: #F2A38F;
+}
+
+.services-main-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255, 248, 245, 0.75);
+}
+
+/* 3 Columns Grid for PC and Laptop */
+.services-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Glassmorphic Service Card */
+.service-card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(29, 22, 11, 0.5) 0%, rgba(8, 8, 8, 0.8) 100%);
+  border: 1px solid rgba(242, 163, 143, 0.15);
+  border-radius: 24px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(242, 163, 143, 0.4);
+  box-shadow: 
+    0 20px 40px -12px rgba(0, 0, 0, 0.9),
+    0 0 25px -5px rgba(242, 163, 143, 0.12);
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: radial-gradient(circle at 50% 0%, rgba(242, 163, 143, 0.15) 0%, rgba(242, 163, 143, 0) 70%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+/* Card Top Elements */
+.service-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.service-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #1D160B;
+  border: 1px solid rgba(242, 163, 143, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2A38F;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon-box {
+  background: #F2A38F;
+  color: #080808;
+  border-color: #F2A38F;
+}
+
+.service-number {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255, 248, 245, 0.35);
+  letter-spacing: 0.05em;
+}
+
+/* Card Typography */
+.service-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.45rem;
+  color: #FFF8F5;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  transition: color 0.25s ease;
+}
+
+.service-card:hover .service-title {
+  color: #FFEAE6;
+}
+
+.service-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.65);
+  margin-bottom: 2rem;
+}
+
+/* Card Action Button for PC & Tablet */
+.service-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #F2A38F;
+  transition: gap 0.2s ease;
+}
+
+.service-card:hover .service-card-footer {
+  gap: 0.65rem;
+  color: #FFEAE6;
+}
+
+/* =========================================
+   TABLET VIEW (701px - 1024px): 3 COLUMNS MAINTAINED
+   ========================================= */
+@media (min-width: 701px) and (max-width: 1024px) {
+  .services-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 18px;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-desc {
+    font-size: 0.82rem;
+    line-height: 1.45;
+    margin-bottom: 1.25rem;
+  }
+
+  .services-main-tagline {
+    font-size: 2.2rem;
+  }
+}
+
+/* =========================================
+   MOBILE VIEW (<= 700PX): 2 COLUMNS & NO BUTTONS
+   ========================================= */
+@media (max-width: 700px) {
+  /* Reduced top padding */
+  .services-section-wrapper {
+    padding: 0.75rem 0.85rem 4rem;
+  }
+
+  /* Reduced bottom margin */
+  .services-header {
+    margin-bottom: 1.25rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Tightened badge spacing */
+  .services-badge {
+    margin-bottom: 0.65rem;
+  }
+
+  .services-main-tagline {
+    font-size: 1.65rem;
+    line-height: 1.2;
+    margin-bottom: 0.65rem;
+  }
+
+  .services-main-desc {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  .services-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+
+  .service-card {
+    padding: 1.15rem 0.85rem;
+    border-radius: 16px;
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  .service-card-top {
+    margin-bottom: 0.75rem;
+  }
+
+  .service-icon-box {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .service-icon-box svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .service-number {
+    font-size: 0.72rem;
+  }
+
+  .service-title {
+    font-size: 0.98rem;
+    line-height: 1.25;
+    margin-bottom: 0.35rem;
+  }
+
+  .service-desc {
+    font-size: 0.74rem;
+    line-height: 1.38;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .service-card-footer {
+    display: none !important;
+  }
+}

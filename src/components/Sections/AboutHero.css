@@ -1,0 +1,224 @@
+/* =========================================
+   ABOUT HERO SECTION
+   ========================================= */
+.about-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+  background-color: #080808 !important;
+  color: #FFF8F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1.5rem 5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -5rem;
+}
+
+/* Atmospheric Glow */
+.about-hero-glow {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 380px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.12) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about-hero-container {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Badge */
+.about-hero-badge-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.about-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.85);
+  border: 1px solid rgba(242, 163, 143, 0.35);
+  color: #F2A38F;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.about-hero-badge-icon {
+  width: 14px;
+  height: 14px;
+  color: #F2A38F;
+}
+
+
+
+/* H1 Header */
+.about-hero-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2.75rem, 6.5vw, 5rem);
+  font-weight: 500;
+  color: #FFF8F5;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  max-width: 1200px;
+}
+
+.about-hero-title .title-accent {
+  color: #F2A38F;
+  font-weight: 100;
+}
+
+/* Description */
+.about-hero-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.65;
+  color: rgba(255, 248, 245, 0.75);
+  max-width: 780px;
+  margin: 0 0 2.75rem 0;
+}
+
+/* CTAs */
+.about-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.about-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.85rem;
+  border-radius: 9999px;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.about-hero-btn.primary {
+  background: #F2A38F;
+  color: #080808;
+}
+
+.about-hero-btn.primary:hover {
+  background: #FFF8F5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -6px rgba(242, 163, 143, 0.35);
+}
+
+.about-hero-btn.secondary {
+  background: rgba(255, 248, 245, 0.06);
+  color: #FFF8F5;
+  border: 1px solid rgba(255, 248, 245, 0.15);
+}
+
+.about-hero-btn.secondary:hover {
+  background: rgba(255, 248, 245, 0.12);
+  border-color: rgba(242, 163, 143, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Horizontal Discipline Pillars */
+.about-hero-pillars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  max-width: 820px;
+}
+
+.pillar-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.pillar-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #F2A38F;
+}
+
+.pillar-label {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 248, 245, 0.6);
+}
+
+/* =========================================
+   RESPONSIVENESS
+   ========================================= */
+@media (max-width: 768px) {
+
+    .about-hero-badge-content {
+    margin-top: 0.5rem;
+  color: #F2A38F;
+}
+
+  .about-hero-section {
+    padding: 6.5rem 1.25rem 4rem;
+    min-height: auto;
+  }
+
+  .about-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .about-hero-desc {
+    font-size: 0.98rem;
+  }
+
+  .about-hero-actions {
+    flex-direction: row;
+    width: 100%;
+    gap: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  .about-hero-btn {
+    width: 100%;
+  }
+
+  .about-hero-pillars {
+    gap: 1rem 1.5rem;
+  }
+
+  .pillar-label {
+    font-size: 0.8rem;
+  }
+}

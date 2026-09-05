@@ -1,0 +1,217 @@
+/* =========================================
+   BRANDING FAQ (AMFLIX TRANSPARENT THEME)
+   ========================================= */
+.b-faq-wrapper {
+  position: relative;
+  width: 100%;
+  background: transparent !important;
+  color: #FFF8F5;
+  padding: 3rem 1.5rem 5.5rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: -3rem;
+  overflow: hidden;
+}
+
+.b-faq-glow {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 750px;
+  height: 380px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.08) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.b-faq-container {
+  width: 100%;
+  max-width: 920px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-terracotta {
+  color: #F2A38F;
+}
+
+/* Header */
+.b-faq-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.b-faq-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.b-faq-subtag {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #F2A38F;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.b-faq-title {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #FFF8F5;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Accordion Stack */
+.b-faq-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.b-faq-item {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.b-faq-item.open {
+  border-color: rgba(242, 163, 143, 0.38);
+  background: #141210;
+}
+
+.b-faq-q-btn {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 1rem;
+}
+
+.b-faq-q-text {
+  font-family: var(--font-primary, serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #FFF8F5;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.b-faq-q-num {
+  color: #F2A38F;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-right: 0.2rem;
+}
+
+.b-faq-item.open .b-faq-q-text {
+  color: #F2A38F;
+}
+
+.b-faq-icon-bubble {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.b-faq-chevron {
+  width: 16px;
+  height: 16px;
+  color: rgba(255, 248, 245, 0.6);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.b-faq-chevron.rotate {
+  transform: rotate(180deg);
+  color: #F2A38F;
+}
+
+.b-faq-answer {
+  padding: 0 1.5rem 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  margin-top: -0.25rem;
+  padding-top: 0.85rem;
+}
+
+.b-faq-answer p {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: rgba(255, 248, 245, 0.72);
+  margin: 0;
+}
+
+/* =========================================
+   RESPONSIVENESS (MOBILE <= 768PX)
+   ========================================= */
+@media (max-width: 768px) {
+  .b-faq-wrapper {
+    padding: 2rem 1rem 3.5rem;
+    margin-top: -2rem;
+  }
+
+  .b-faq-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .b-faq-title {
+    font-size: 1.75rem;
+  }
+
+  .b-faq-q-btn {
+    padding: 1rem 1.15rem;
+  }
+
+  .b-faq-q-text {
+    font-size: 0.98rem;
+  }
+
+  .b-faq-answer {
+    padding: 0 1.15rem 1rem;
+  }
+
+  .b-faq-answer p {
+    font-size: 0.88rem;
+  }
+}

@@ -1,0 +1,868 @@
+/* =========================================
+   BANGALORE STUDIO HUB STYLES (TRANSPARENT & CLEAN)
+   ========================================= */
+.bgl-page-wrapper {
+  position: relative;
+  width: 100%;
+  background: transparent !important;
+  color: #FFF8F5;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -4rem; /* Pull the page up to overlap the header */
+}
+
+.bgl-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+/* Sections: Transparent with seamless vertical pacing */
+.bgl-section {
+  padding: 2.75rem 0;
+  position: relative;
+  background: transparent !important;
+  border: none !important;
+  margin-top: -3.5rem;
+}
+
+/* Borders removed completely */
+.bgl-border-top {
+  border: none !important;
+}
+
+.text-terracotta {
+  color: #F2A38F;
+}
+
+/* =========================================
+   1. HERO SECTION
+   ========================================= */
+.bgl-hero-sec {
+  position: relative;
+  padding: 6.5rem 0 3.5rem;
+  display: flex;
+  justify-content: center;
+  background: transparent !important;
+  overflow: hidden;
+}
+
+.bgl-hero-glow {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 850px;
+  height: 480px;
+  background: radial-gradient(ellipse at center, rgba(242, 163, 143, 0.09) 0%, rgba(8, 8, 8, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bgl-hero-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 920px;
+}
+
+.bgl-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: 9999px;
+  background: rgba(29, 22, 11, 0.7);
+  border: 1px solid rgba(242, 163, 143, 0.3);
+  color: #F2A38F;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.bgl-h1 {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #FFF8F5;
+  margin: 0 0 1rem 0;
+}
+
+.bgl-accent {
+  color: #F2A38F;
+  font-style: italic;
+}
+
+.bgl-hero-subheading {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  color: #FFF8F5;
+  font-weight: 400;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: -0.01em;
+}
+
+.bgl-hero-content {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: rgba(255, 248, 245, 0.72);
+  margin: 0 0 2rem 0;
+  max-width: 780px;
+}
+
+.bgl-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Button UI */
+.bgl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.bgl-btn.primary {
+  background: #F2A38F;
+  color: #080808;
+  box-shadow: 0 4px 20px -4px rgba(242, 163, 143, 0.35);
+}
+
+.bgl-btn.primary:hover {
+  background: #FFF8F5;
+  transform: translateY(-2px);
+}
+
+.bgl-btn.secondary {
+  background: rgba(255, 255, 255, 0.04);
+  color: #FFF8F5;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bgl-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(242, 163, 143, 0.35);
+}
+
+/* Section Header Typography */
+.bgl-sec-header {
+  margin-bottom: 2rem;
+}
+
+.bgl-sub-badge {
+  display: block;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #F2A38F;
+  margin-bottom: 0.5rem;
+}
+
+.bgl-h2 {
+  font-family: var(--font-primary, serif);
+  font-size: clamp(2rem, 3.8vw, 2.9rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #FFF8F5;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.bgl-sec-lead {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255, 248, 245, 0.7);
+  margin: 0.75rem 0 0 0;
+  max-width: 650px;
+}
+
+/* =========================================
+   2. ABOUT SECTION & PILL CLUSTER
+   ========================================= */
+.bgl-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.bgl-split-copy p {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: rgba(255, 248, 245, 0.75);
+  margin: 0 0 1rem 0;
+}
+
+.bgl-combines-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding-top: 1rem;
+  border: none;
+  flex-wrap: wrap;
+}
+
+.bgl-ribbon-label {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 248, 245, 0.45);
+}
+
+.bgl-pill-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bgl-cluster-pill {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.82rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #FFF8F5;
+}
+
+/* =========================================
+   3. SERVICES GRID
+   ========================================= */
+.bgl-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.bgl-service-card {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bgl-service-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(242, 163, 143, 0.4);
+  box-shadow: 0 16px 35px -10px rgba(0, 0, 0, 0.9);
+}
+
+.bgl-card-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(242, 163, 143, 0.08);
+  border: 1px solid rgba(242, 163, 143, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.bgl-srv-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.4rem;
+  color: #FFF8F5;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.bgl-srv-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: rgba(255, 248, 245, 0.65);
+  margin: 0 0 1.5rem 0;
+}
+
+.bgl-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #F2A38F;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.bgl-card-link:hover {
+  gap: 0.65rem;
+  color: #FFF8F5;
+}
+
+/* =========================================
+   4. WHO WE WORK WITH
+   ========================================= */
+.bgl-who-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.bgl-who-item {
+  background: #0d0c0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bgl-who-num {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #F2A38F;
+  margin-bottom: 0.5rem;
+}
+
+.bgl-who-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.15rem;
+  color: #FFF8F5;
+  margin: 0 0 0.4rem 0;
+  font-weight: 500;
+}
+
+.bgl-who-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: rgba(255, 248, 245, 0.6);
+  margin: 0;
+}
+
+/* =========================================
+   5. WHY CHOOSE AMFLIX
+   ========================================= */
+.bgl-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.bgl-why-card {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 1.75rem 1.85rem;
+}
+
+.bgl-why-card.full {
+  grid-column: 1 / -1;
+}
+
+.bgl-why-card h3 {
+  font-family: var(--font-primary, serif);
+  font-size: 1.35rem;
+  color: #FFF8F5;
+  margin: 0 0 0.5rem 0;
+}
+
+.bgl-why-card p {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.68);
+  margin: 0;
+}
+
+/* =========================================
+   6. OUR PROCESS
+   ========================================= */
+.bgl-process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.bgl-process-card {
+  background: #0d0c0b;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bgl-process-step {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #F2A38F;
+  margin-bottom: 0.65rem;
+}
+
+.bgl-process-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.2rem;
+  color: #FFF8F5;
+  margin: 0 0 0.4rem 0;
+}
+
+.bgl-process-desc {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: rgba(255, 248, 245, 0.6);
+  margin: 0;
+}
+
+/* =========================================
+   7. LOCAL + REMOTE
+   ========================================= */
+.bgl-split-grid-equal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.bgl-model-card {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.bgl-model-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.bgl-model-header h3 {
+  font-family: var(--font-primary, serif);
+  font-size: 1.35rem;
+  color: #FFF8F5;
+  margin: 0;
+}
+
+.bgl-model-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bgl-model-list li {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.9rem;
+  color: rgba(255, 248, 245, 0.75);
+  display: flex;
+  align-items: center;
+}
+
+.bgl-model-list li::before {
+  content: '•';
+  color: #F2A38F;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.2em;
+}
+
+/* =========================================
+   8. REAL WORK SHOWCASE
+   ========================================= */
+.bgl-work-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.bgl-tab-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 248, 245, 0.7);
+  padding: 0.4rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bgl-tab-btn.active {
+  background: #F2A38F;
+  border-color: #F2A38F;
+  color: #080808;
+  font-weight: 600;
+}
+
+.bgl-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.bgl-work-card {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bgl-work-media {
+  width: 100%;
+  height: 200px;
+  background: #000;
+  overflow: hidden;
+}
+
+.bgl-work-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bgl-work-content {
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bgl-work-cat {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #F2A38F;
+  margin-bottom: 0.35rem;
+}
+
+.bgl-work-name {
+  font-family: var(--font-primary, serif);
+  font-size: 1.2rem;
+  color: #FFF8F5;
+  margin: 0 0 0.4rem 0;
+}
+
+.bgl-work-tagline {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: rgba(255, 248, 245, 0.6);
+  margin: 0 0 1rem 0;
+  flex: 1;
+}
+
+.bgl-work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: #F2A38F;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bgl-center-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+/* =========================================
+   9. INDUSTRIES CLUSTER
+   ========================================= */
+.bgl-industries-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+}
+
+.bgl-industry-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 9999px;
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  color: #FFF8F5;
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.bgl-industry-pill:hover {
+  border-color: #F2A38F;
+  color: #F2A38F;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   10. BANNER BOX
+   ========================================= */
+.bgl-banner-box {
+  background: linear-gradient(180deg, #15110d 0%, #0d0b09 100%);
+  border: 1px solid rgba(242, 163, 143, 0.25);
+  border-radius: 24px;
+  padding: 2.75rem;
+}
+
+.bgl-banner-box .bgl-h2 {
+  margin: 0.4rem 0 1rem 0;
+}
+
+.bgl-banner-p {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.02rem;
+  line-height: 1.68;
+  color: rgba(255, 248, 245, 0.75);
+  margin: 0 0 0.85rem 0;
+  max-width: 900px;
+}
+
+/* =========================================
+   11. PACKAGES GRID
+   ========================================= */
+.bgl-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.bgl-pricing-card {
+  background: #11100f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 1.65rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bgl-pkg-title {
+  font-family: var(--font-primary, serif);
+  font-size: 1.25rem;
+  color: #FFF8F5;
+  margin-bottom: 1rem;
+}
+
+.bgl-pkg-pricing {
+  display: flex;
+  flex-direction: column;
+}
+
+.bgl-pkg-val {
+  font-family: var(--font-primary, serif);
+  font-size: 1.35rem;
+  color: #F2A38F;
+  font-weight: 600;
+}
+
+.bgl-pkg-cadence {
+  font-size: 0.78rem;
+  color: rgba(255, 248, 245, 0.45);
+}
+
+/* =========================================
+   12. BANGALORE FAQ ACCORDION
+   ========================================= */
+.bgl-faq-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.bgl-faq-item {
+  background: #0d0c0b;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.bgl-faq-item.open {
+  border-color: rgba(242, 163, 143, 0.4);
+}
+
+.bgl-faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.15rem 1.4rem;
+}
+
+.bgl-faq-question h3 {
+  font-family: var(--font-primary, serif);
+  font-size: 1.05rem;
+  color: #FFF8F5;
+  margin: 0;
+  font-weight: 500;
+}
+
+.bgl-faq-icon {
+  width: 18px;
+  height: 18px;
+  color: #F2A38F;
+  transition: transform 0.25s ease;
+}
+
+.bgl-faq-item.open .bgl-faq-icon {
+  transform: rotate(180deg);
+}
+
+.bgl-faq-answer {
+  padding: 0 1.4rem 1.15rem;
+}
+
+.bgl-faq-answer p {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: rgba(255, 248, 245, 0.7);
+  margin: 0;
+}
+
+/* =========================================
+   13. FINAL CTA
+   ========================================= */
+.bgl-final-cta-card {
+  background: linear-gradient(180deg, #18130f 0%, #0d0a08 100%);
+  border: 1px solid rgba(242, 163, 143, 0.35);
+  border-radius: 24px;
+  padding: 2.75rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.bgl-final-cta-copy {
+  max-width: 650px;
+}
+
+.bgl-final-lead {
+  font-family: var(--font-supporting, sans-serif);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 245, 0.75);
+  margin: 0.65rem 0 0 0;
+}
+
+.bgl-final-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   RESPONSIVENESS (TABLET & MOBILE)
+   ========================================= */
+@media (max-width: 1024px) {
+  .bgl-services-grid,
+  .bgl-work-grid,
+  .bgl-pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bgl-process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bgl-who-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .bgl-section {
+    padding: 2rem 0;
+    margin-top: -2rem;
+  }
+
+  .bgl-hero-sec {
+    padding: 5.5rem 0 2.5rem;
+  }
+
+  .bgl-h1 {
+    font-size: 2.2rem;
+  }
+
+  .bgl-hero-content {
+    font-size: 0.95rem;
+  }
+
+  .bgl-hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bgl-btn {
+    width: 100%;
+  }
+
+  .bgl-split-grid,
+  .bgl-split-grid-equal,
+  .bgl-final-cta-card {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .bgl-services-grid,
+  .bgl-work-grid,
+  .bgl-pricing-grid,
+  .bgl-process-grid,
+  .bgl-who-grid,
+  .bgl-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bgl-banner-box {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .bgl-final-actions {
+    width: 100%;
+  }
+}
