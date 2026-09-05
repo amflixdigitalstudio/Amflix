@@ -23,7 +23,7 @@ import TermsConditions from './pages/TermsConditions';
 // Service Pages
 import Pricing from './pages/services/Pricing';
 import Branding from './pages/services/Branding';
-import SocialMedia from './pages/services/socialmedia';
+import SocialMedia from "./pages/Services/SocialMedia";
 import DigitalMarketing from './pages/services/DigitalMarketing';
 import WebsiteDev from './pages/services/WebsiteDev';
 import MobileAppDev from './pages/services/MobileAppDev';
