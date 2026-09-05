@@ -1,9 +1,9 @@
 import React from 'react';
 import HeroSection from '../components/sections/HeroSection.jsx';
-import ServicesSection from '../components/Sections/ServicesSection.jsx';
-import WhyAMFlix from '../components/Sections/WhyAMFlix.jsx';
-import ContactSection from '../components/Sections/ContactSection.jsx';
-import HomeFAQ from '../components/Sections/HomeFAQ.jsx';
+import ServicesSection from '../components/sections/ServicesSection.jsx';
+import WhyAMFlix from '../components/sections/WhyAMFlix.jsx';
+import ContactSection from '../components/sections/ContactSection.jsx';
+import HomeFAQ from '../components/sections/HomeFAQ.jsx';
 
 export default function Home() {
   return (
