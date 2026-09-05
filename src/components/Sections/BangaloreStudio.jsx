@@ -11,7 +11,7 @@ import {
   Share2, 
   Megaphone, 
   Video,
-  Building2,
+  Building2
 } from 'lucide-react';
 import { portfolioData } from '../../data/PortfolioData';
 import './BangaloreStudio.css';
@@ -94,8 +94,9 @@ export default function BangaloreStudio() {
     };
   }, []);
 
-  // Filter Genuine Projects for Section 8
-  const filteredWork = portfolioData.projects
+  // Safe fallback ensures runtime protection if projects array is undefined
+  const projectList = Array.isArray(portfolioData?.projects) ? portfolioData.projects : [];
+  const filteredWork = projectList
     .filter((item) => activeWorkFilter === 'all' || item.category === activeWorkFilter)
     .slice(0, 6);
 
@@ -627,12 +628,16 @@ export default function BangaloreStudio() {
                 <div
                   key={index}
                   className={`bgl-faq-item ${isOpen ? 'open' : ''}`}
-                  onClick={() => setOpenFaq(isOpen ? null : index)}
                 >
-                  <div className="bgl-faq-question">
+                  <button
+                    type="button"
+                    className="bgl-faq-question"
+                    onClick={() => setOpenFaq(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                  >
                     <h3>{f.q}</h3>
                     <ChevronDown className="bgl-faq-icon" />
-                  </div>
+                  </button>
                   {isOpen && (
                     <div className="bgl-faq-answer">
                       <p>{f.a}</p>

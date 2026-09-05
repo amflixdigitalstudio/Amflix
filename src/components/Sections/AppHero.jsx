@@ -2,17 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   ArrowUpRight, 
-  Sparkles, 
-  Smartphone, 
-  ShoppingBag, 
-  Wrench, 
-  CalendarCheck, 
-  Store, 
-  Users, 
-  Rocket, 
-  Server, 
-  LayoutDashboard, 
-  Webhook 
+  Sparkles,
 } from 'lucide-react';
 import './AppHero.css';
 
