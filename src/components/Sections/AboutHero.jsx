@@ -47,12 +47,12 @@ export default function AboutHero() {
         {/* Action Controls */}
         <div className="about-hero-actions">
           <Link to="/contact" className="about-hero-btn primary">
-            <span>Start a Project</span>
+            <span className="about-hero-btn-content">Start a Project</span>
             <ArrowUpRight className="w-4 h-4" />
           </Link>
 
           <Link to="/servicepricing" className="about-hero-btn secondary">
-            <span>Explore Pricing</span>
+            <span className="about-hero-btn-content">Explore Pricing</span>
           </Link>
         </div>
 

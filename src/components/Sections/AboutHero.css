@@ -214,11 +214,14 @@
     width: 100%;
   }
 
+  .about-hero-btn-content {
+    letter-spacing: -0.05em;
+  }
   .about-hero-pillars {
     gap: 1rem 1.5rem;
   }
 
   .pillar-label {
-    font-size: 0.8rem;
+    font-size: 0.88rem;
   }
 }
