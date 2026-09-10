@@ -3,7 +3,7 @@ import { Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import './ContactSection.css';
 
 // PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL HERE:
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyYbeRBjh3k-Tc8r7oEpVEVPBrTMIyKpBcAXjNdhIrGwlRU8FjHuJ6z1So6C9bWUI3d/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyHg9201Y6PnbT3yHWLwTy6dY_lUXp9JBazm1Y2y8OhCSB093DoHS5ivSRPWny6nqM/exec";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
