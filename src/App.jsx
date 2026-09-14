@@ -55,7 +55,7 @@ export default function App() {
 
             {/* Separate Legal Routes */}
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<TermsConditions />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
 
             {/* Service Routes */}
             <Route path="/ServicePricing" element={<Pricing />} />
