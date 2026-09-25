@@ -20,7 +20,7 @@ export const navbarData = {
         { name: 'Design & Video', path: '/services/design-video', desc: 'Motion, video editing & graphics' },
       ]
     },
-    { name: 'Work', path: '/work' },
+    // { name: 'Work', path: '/work' },
     { name: 'About', path: '/about' },
     { name: 'Industries', path: '/industries' },
     { name: 'Insights', path: '/insights' },
@@ -39,7 +39,7 @@ export const navbarData = {
     topPages: [
       { name: 'Home', path: '/' },
       { name: 'About Us', path: '/about' },
-      { name: 'Work / Portfolio', path: '/work' },
+      // { name: 'Work / Portfolio', path: '/work' },
       { name: 'Industries', path: '/industries' },
       { name: 'Bangalore Studio', path: '/locations/bangalore' },
       { name: 'Insights', path: '/insights' },
